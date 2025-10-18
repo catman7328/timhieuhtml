@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create a Portfolio Gallery using HTML and CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      /* wildcard styling */
+      * {
+        box-sizing: border-box;
+      }
+
+      /* padding cho toàn bộ body */
+
+      body {
+        padding: 15px;
+      }
+
+      /* tạo kiểu cho body */
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      h1 {
+        color: green;
+      }
+
+      /* trang trí anchor tag */
+
+      a {
+        text-decoration: none;
+        color: #5673c8;
+      }
+
+      a:hover {
+        color: lightblue;
+      }
+
+      /* trang trí paragraph tag */
+
+      p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+      }
+
+      /* trang trí hàng và cột */
+
+      .row {
+        margin: 0px -18px;
+        padding: 8px;
+      }
+
+      .row > .column {
+        padding: 6px;
+      }
+
+      .column {
+        float: left;
+        width: 25%;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* trang trí nội dung */
+
+      .content {
+        background-color: white;
+        padding: 10px;
+        border: 1px solid gray;
+      }
+
+      /* set window size chiều ngang 850 */
+
+      @media screen and (max-width: 850px) {
+        .column {
+          width: 50%;
+        }
+      }
+
+      /* set window size chiều ngang 400 */
+
+      @media screen and (max-width: 400px) {
+        .column {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+</html>
+<body>
+  <div class="container">
+    <h1>ITviec Blog</h1>
+    <h3>Ý tưởng phát triển sự nghiệp IT của bạn</h3>
+    <a href="../index.html"><h2>về trang chủ</h2></a>
+    <hr />
+
+    <h2>Portfolio</h2>
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img
+            src="http://itviec.uptech.vn/wp-content/uploads/2024/03/html-la-gi-blog-thumbnail-vippro.jpg"
+            alt=""
+            style="width: 100%"
+          />
+          <h3>
+            <a href="#">Giải đáp A - Z điều cần biết về HTML</a>
+          </h3>
+          <p>
+            HTML (Hypertext Markup Language) hay còn được gọi là ngôn ngữ đánh
+            dấu siêu văn bản được thiết kế để tạo nên các trang web trên World
+            Wide Web (www).
+          </p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="content">
+          <img
+            src="http://itviec.uptech.vn/wp-content/uploads/2024/03/table-html-blog-thumbnail-vippro.jpg"
+            alt=""
+            style="width: 100%"
+          />
+          <h3>
+            <a href="#">Hướng dẫn cách tạo bảng trong HTML</a>
+          </h3>
+          <p>
+            Bảng (Table) là phần tử HTML thể hiện dữ liệu được sắp xếp theo hàng
+            và cột tương tự như một bảng tính. Trong HTML, cấu trúc bảng có thể
+            giúp bạn dễ dàng sắp xếp các thành phần từ đơn giản đến phức tạp
+            theo một cách hoàn chỉnh với đầy đủ về tiêu đề hàng, cột, tiêu đề
+            hợp nhất,…
+          </p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="content">
+          <img
+            src="http://itviec.uptech.vn/wp-content/uploads/2024/03/bang-mau-html-blog-thumbnail-vippro.png"
+            alt=""
+            style="width: 100%"
+          />
+          <h3>
+            <a href="#">Tổng hợp đầy đủ nhất về Bảng màu HTML</a>
+          </h3>
+          <p>
+            Mã màu HTML là việc biểu diễn các màu sắc thông qua tập hợp số và
+            chữ cái theo một quy tắc. Khi lập trình trang web, bảng mã màu HTML
+            sẽ giúp máy tính diễn giải và hiển thị thông tin theo đúng màu sắc
+            mà bạn đã cài đặt.
+          </p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="content">
+          <img
+            src="http://itviec.uptech.vn/wp-content/uploads/2024/03/cac-the-trong-html-blog-thumbnail-vippro.png"
+            alt=""
+            style="width: 100%"
+          />
+          <h3>
+            <a href="#">Tổng hợp 70+ thẻ trong HTML thông dụng</a>
+          </h3>
+          <p>
+            Thẻ HTML (HTML tags) là những từ khóa được sử dụng để định dạng cấu
+            trúc khác nhau trên trang web. Cú pháp của một thẻ HTML đều có hai
+            phần được gọi là thẻ mở và thẻ đóng, được đặt trong dấu ngoặc nhọn
+            và có thêm dấu gạch chéo (/) ở nội dung thẻ đóng.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<pre>
+                                       <p> NGÔ ĐÌNH QUỐC || qngo09042009 || lớp 11/1</p>
+</pre>
+
+</body>
+
+
+</html>

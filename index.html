@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>timhieuhtml</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css">
+  </head>
+  <body>
+  
+    <h1 style="color:red;">Tổng hợp 12+ bài tập HTML & CSS cơ bản cho người mới bắt đầu</h1>
+  
+    <img
+      width="700"
+      src="https://itviec.com/blog/wp-content/uploads/2024/05/bai-tap-html-blog-thumbnail-vippro.png"
+      alt="ảnh 1"
+    />
+    
+
+    <h3 style="color:green;">nội dung bài viết</h3>
+   <b>
+      <ol>
+        <li><a href="#taisai"><h3>Tại sao nên học html?</h3></a></li>
+        <li><a href="#tonghop"><h3>Tổng hợp bài tập HTML & CSS cơ bản cho người mới bắt đầu</h3></a></li>
+        <li><a href="#bainangcao"><h3>Bài tập lập trình web bằng HTML và CSS nâng cao</h3></a></li>
+      </ol>
+   </b>
+    <p>
+      <i>
+        HTML thường được sử dụng để xây dựng nền tảng cấu trúc cho một trang web
+        và là một kỹ năng cần thiết cho lập trình viên có định hướng về phát
+        triển web. Nếu bạn muốn sử dụng HTML thành thạo và tạo được một website
+        thì có thể thực hành các bài tập HTML từ cơ bản đến nâng cao để rèn
+        luyện kỹ năng của bản thân.
+      </i>
+    </p>
+    Cùng đọc bài viết dưới đây để nhận được:
+    <ul>
+      <h5>
+        <li>Tổng hợp chi tiết các bài tập HTML từ cơ bản đến nâng cao</li>
+        <li>
+          Nâng cao khả năng thực hành và ứng dụng HTML qua các dự án thực tế
+        </li>
+      </h5>
+    </ul>
+    <h2 id="taisao" style="color:blueviolet;"><b>tại sao nên học html?</b></h2>
+    <p>
+      Nắm vững HTML là một kỹ năng nền tảng cho bất kỳ ai có định hướng hoặc đam
+      mê về lập trình và phát triển website. HTML vẫn rất hữu ích ngay cả khi
+      bạn không có định hướng theo lập trình, khi làm việc với các nền tảng
+      website dựng sẵn, bạn có thể sử dụng HTML để giải quyết các vấn đề cơ bản
+      và tùy chỉnh website cho mình.
+    </p>
+    Một số lợi ích khi học HTML:
+    
+   
+   <p>
+        <ul>
+          <li>
+            <strong>Xây dựng cấu trúc web:</strong> HTML cung cấp bộ khung cơ bản
+            cho mọi trang web, cho phép trình duyệt biết cách hiển thị văn bản, hình
+            ảnh, liên kết, video,…
+          </li>
+        
+          <li>
+            <strong>Dễ sử dụng:</strong> Các thẻ và cú pháp của HTML khá đơn giản,
+            dễ học và sử dụng với cả những người mới bắt đầu.
+          </li>
+          <li><strong>Ứng dụng đa dạng:</strong> HTML thường được sử dụng cho lập trình trang web, mẫu email, bản tin,…</li>
+          <li><strong>Nền tảng phát triển web:</strong> Nắm vững HTML là bước đầu tiên để tìm hiểu các công nghệ phức tạp hơn như CSS và JavaScript. </li>
+        </ul>
+      </p>
+      <h2 id="tonghop" style="color:red;">Tổng hợp bài tập HTML & CSS cơ bản cho người mới bắt đầu</h2>
+      <h2 style="color:blue;">HTML Form 	(Biểu mẫu)</h2>
+      <p>Về cơ bản, biểu mẫu được sử dụng để thu thập dữ liệu người dùng và gửi đến máy chủ để được xử lý, bao gồm các thông tin đầu vào như họ tên, email, tuổi,… Biểu mẫu chứa các thành phần được khai báo trong thẻ<code class="language-html"> &lt;form&gt;</code> và các thẻ nhập liệu như <code class="language-html">&lt;input&gt;</code>, <code class="language-html">&lt;select&gt;</code>,<code class="language-html">&lt;checkbox&gt;</code>,….cùng một số label khác.</p>
+
+      <p>Bên cạnh đó, mỗi biểu mẫu có một nút gửi được định dạng với thuộc tính <code class="language-html">type=submit</code> giúp người dùng gửi dữ liệu đã nhập đến máy chủ.</p>
+      <br>
+      <p><b>Bài tập 1:</b> Hãy tạo một trang web với login form HTML theo mẫu ở dưới đây:
+
+</p>
+<form action="">
+
+  <label for="username">tên của bạn</label>
+  <input type="text" name="username" id="username" />
+  <label for="password">mật khẩu</label>
+  <input type="password" name="password" id="password" /><br>
+  <input type="radio" name="gender" value="male" />gái<br>
+  <input type="radio" name="gender" value="female" />nam<br>
+  <input type="radio" name="gender" value="other" />khác<br>
+  <input list="Options" />
+
+  <datalist id="Options">
+    <option value="Thành viên Bạc"></option>
+    <option value="Thành viên Vàng"></option>
+    <option value="Thành viên Kim Cương"></option>
+  </datalist>
+
+ <input type="color" />
+ <input type="checkbox" name="correct" value="correct" />chính xác
+   <input type="submit" value="đỉnh" />
+
+</form>
+<p><strong>Trả lời Bài tập 1:</strong></p>
+<pre>
+ <code class="language-html">
+    &lt;form action="">
+  
+    &lt;label for="username">Usernambr&lt;/label>
+    &lt;input type="text" name="username" id="username" />
+    &lt;label for="password">Passworbr&lt;/label>
+    &lt;input type="password" name="password" id="password" />&lt;br>
+    &lt;input type="radio" name="gender" value="male" />Mabr&lt;br>
+    &lt;input type="radio" name="gender" value="female" />Femabr&lt;br>
+    &lt;input type="radio" name="gender" value="other" />Othbr&lt;br>
+    &lt;input list="Options" />
+  
+    &lt;datalist id="Options">
+      &lt;option value="Thành viên Bạcbr&lt;/option>
+      &lt;option value="Thành viên Vàngbr&lt;/option>
+    &lt;option value="Thành viên Kim Cươngbr&lt;/option>
+    &lt;/datalist>
+  
+   &lt;input type="color" />
+   &lt;input type="checkbox" name="correct" value="correct" />Correct
+     &lt;input type="submit" value="Submit" />
+  
+  &lt;/form>
+ </code>
+
+</pre>
+
+
+
+
+<h2 style="color:blue;">HTML Image (Hình ảnh)</h2>
+<p>Để chèn hình ảnh vào trình duyệt, bạn có thể sử dụng phần tử <code class="language-html">&lt;img&gt;</code> cùng các thuộc tính src để căn chỉnh hình ảnh.</p>
+ <p><strong>Bài tập 2: </strong>Thực hành bài tập HTML chèn hình ảnh như sau:</p>
+<pre>                 
+                          <img src="https://itviec.com/blog/wp-content/uploads/2024/05/bai-tap-html-2-vippro.jpg" alt="ảnh 2">
+  </pre>
+  <b>Trả lời Bài tập 2:</b>
+  <pre>
+    <code class="language-html">
+  &lt;pre>   
+                          &lt;img src="https://itviec.com/blog/wp-content/uploads/2024/05/bai-tap-html-2-vippro.jpg" alt="ảnh 2">
+  &lt;/pre>
+  </code>
+  </pre>
+  <h2 style="color:blue;">HTML audio (Âm thanh)</h2>
+  <p>Trước HTML5, các tệp âm thanh được phát trong trình duyệt bằng trình cắm như Adobe Flash. Sau này chúng có thể được thêm vào trình duyệt dưới định dạng tutorial.ogg hoặc tutorial.mp3, các phần tử sẽ chỉ ra các tệp âm thanh thay thế mà trình duyệt có thể chọn</p>
+<p><b>Bài tập 3:</b> Thực hiện chèn một đoạn âm thanh vào trang web:
+</p>
+<pre>        <img src="https://itviec.com/blog/wp-content/uploads/2024/05/bai-tap-html-3-vippro.jpg" alt="anh audio"></pre>
+<p><strong>Trả lời Bài tập 3:</strong></p>
+<pre>
+  <code class="language-html">
+  &lt;audio controls&gt;
+   &lt;source src=&quot;tutorial.ogg&quot; type=&quot;audio/ogg&quot; /&gt;
+   &lt;source src=&quot;tutorial.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+   Your browser does not support the audio element.
+&lt;/audio&gt;
+&lt;audio src=&quot;https://s3.amazonaws.com/freecodecamp/simonSound1.mp3&quot; controls loop autoplay&gt;&lt;/audio&gt;
+
+  </code>
+</pre>
+<p>Với bài tập trên, ta có thể thấy: </p>
+<p>
+<li> <code class="language-html"><b> &lt;control&gt;:</b> </code>Bao gồm các điều khiển âm thanh như phát, tạm dừng hoặc tăng giảm âm lượng. Nếu bạn không sử dụng thuộc tính này, sẽ không có âm thanh nào được hiển thị trên trình duyệt.</li> 
+ <li> <code class="language-html"><b>&lt;source&gt;:</b></code> Cho phép bạn chỉ ra các tệp âm thanh thay thế mà trình duyệt có thể chọn, trình duyệt sẽ sử dụng định dạng được định dạng đầu tiên. </li>
+ <li><code class="language-html"><b> &lt;autoplay&gt;:</b></code> Phát tự động tệp âm thanh khi vừa truy cập trang web. </li>
+<li> <code class="language-html"><b>&lt;loop&gt;:</b></code> Phát tệp âm thanh theo vòng lặp liên tục nếu được sử dụng trong đoạn mã.</li>
+  
+</p>
+<h2 style="color:blue;">HTML (Video)</h2>
+<p>Tương tự với chèn âm thanh, video cũng được đặt trực tiếp vào trang trong cập nhật mới nhất của HTML5. Để nhúng tệp video vào trang web, bạn chỉ cần thay đổi src của tệp âm thanh.</p>
+<p><b>Bài tập 4:</b> Thực hành chèn một đoạn video vào trang web theo hình như sau:</p>
+<pre>                <img src="https://itviec.com/blog/wp-content/uploads/2024/05/bai-tap-html-4-vippro.jpg" alt="ảnh video"></pre>
+<b><p>Trả lời Bài tập 4:</p></b>
+<pre><code class="language-html">
+&lt;video controls&gt;
+  &lt;source src=&quot;tutorial.ogg&quot; type=&quot;video/ogg&quot; /&gt;
+  &lt;source src=&quot;tutorial.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;video autoplay&gt;
+  &lt;source src=&quot;video.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;video poster=&quot;poster.png&quot;&gt;
+  &lt;source src=&quot;video.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;video controls&gt;
+  &lt;source src=&quot;video.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+
+</code></pre>
+<p>Để thực hiện bài tập HTML chèn video vào trang web, bạn có thể tiến hành như sau: </p>
+<ul>
+  
+  <li><b>Sử dụng thuộc tính control: </b>Để điều chỉnh và định dạng video, tương tự với điều chỉnh âm lượng của âm thanh. Nhận dạng video bạn có thể dùng là mp4, webM và ogg, được hỗ trợ rộng rãi trong các trình duyệt như Chrome, Firefox và Opera. </li>
+<li> <b> Tự động phát (autoplay):</b> Cho phép bạn cài đặt chức năng tự động chạy video khi vừa truy cập vào trang web, tính năng này có thể gây khó chịu cho một số người dùng nên bạn có thể cân nhắc khi sử dụng thuộc tính này. Ngoài ra, trình duyệt di động như Safari của iOS không tương thích với thuộc tính này.</li>
+<li> <b> Hình ảnh (poster): </b> Thuộctính hiển thị hình ảnh trên video cho đến khi người dùng nhấn vào.</li>
+</ul>
+<h2 style="color:blue;">Table HTML</h2>
+<p>Chức năng của bảng (table) giúp bạn thể hiện dữ liệu hoặc thông tin từ đơn giản đến phức tạp theo cách hoàn chỉnh và dễ dàng theo dõi. Bảng thường được sử dụng thẻ <code class="language-html">&lt;table&gt;</code> cùng các cặp thẻ thành phần như<code class="language-html"> &lt;td&gt;</code>,<code class="language-html"> &lt;tr&gt;</code>, <code class="language-html">&lt;th&gt;</code>, <code class="language-html">&lt;thead&gt;</code>,<code class="language-html"> &lt;tbody&gt;</code>,<code class="language-html"> &lt;tfoot&gt</code>;,… để lập trình một cấu trúc bảng hoàn chỉnh.</p>
+<p><b>Bài tập 5:</b> Thực hành tạo một bảng tính cơ bản với thành phần như sau (hình tham khảo bên dưới)</p>
+
+<ul>
+ <li> Định dạng bảng: Tất cả đường viền trong bảng có dạng ngắt quãng và màu xanh dương.</li>
+ <li> Tiêu đề: Tổng hợp các bài viết về HTML trên ITviec Blog.</li>
+<li>  Cột: STT, Tên bài viết, Link.</li>
+  <li>Hàng: 3 hàng với bài viết tự chọn.</li>
+</ul>
+<pre><img src="https://itviec.com/blog/wp-content/uploads/2024/05/bai-tap-html-5-vippro.jpg" alt="table">
+<a href="/html/hocbang.html"><h2>bảng đã làm</h2></a></pre>
+<pre>
+<code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;style&gt;
+th, td {
+  Border-style: dotted;
+  border-radius: 10px;
+  border-color: #96D4D4;
+}
+&lt;/style&gt;
+
+&lt;body&gt;
+&lt;h2&gt;Tổng hợp các bài viết về HTML trên ITviec Blog&lt;/h2&gt;
+&lt;table style=&quot;width:100%&quot;&gt;
+  &lt;tr&gt;
+&lt;th&gt;STT&lt;/th&gt;
+&lt;th&gt;Bài viết&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Giải đáp &quot;tất tần tật&quot; về HTML&lt;/td&gt;
+&lt;td&gt;https://itviec.com/blog/html-la-gi/&lt;/td&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Table HTML: Hướng dẫn cách tạo bảng trong HTML chi tiết từ A – Z&lt;/td&gt;
+&lt;td&gt;https://itviec.com/blog/table-html/&lt;/td&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;Tổng hợp 70+ thẻ HTML thông dụng&lt;/td&gt;
+&lt;td&gt;https://itviec.com/blog/cac-the-trong-html//&lt;/td&gt;
+  &lt;/tr&gt;
+
+&lt;/table&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code>
+</pre>
+<p>Theo bài tập trên, có thể thấy:</p>
+<ul>
+  
+  <li>
+    Thuộc tính <code class="language-html">&lt;style&gt;</code> được sử dụng để thiết lập màu sắc cho <code class="language-html">&lt;td&gt;</code> với<code class="language-html"> &lt;th&gt</code>; theo giá trị là border-style:dotted (đường viền đứt quãng) và border-color: #96D4D4 (màu xanh dương).</li>
+    <li>Với các giá trị hàng và cột, bạn sẽ sử dụng lần lượt các thẻ <code class="language-html">&lt;td&gt;</code>,<code class="language-html"> &lt;tr&gt;</code> và <code class="language-html">&lt;th&gt</code>; để định dạng thành phần chính của bảng.</li>
+
+</ul>
+<h2 id="bainangcao" style="color:red;">Bài tập lập trình web bằng HTML và CSS nâng cao</h2>
+<p><b>Bài tập 1:</b> Thực hiện một trang web portfolio trình bày các sản phẩm bài viết của bản thân theo mẫu như sau:</p>
+<pre><img src="/html/Ảnh chụp màn hình 2025-10-18 135623.png" alt="ảnh bài 1 nâng cao"></pre>
+<p><b>Trả lời Bài tập 12:</b> <br>
+  <br>
+
+Đầu tiên, bạn tiến hành định dạng cho trang web bằng cách sử dụng các thuộc tính CSS. </p>
+<pre>
+<code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;title&gt; Create a Portfolio Gallery using HTML and CSS &lt;/title&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+
+  &lt;style&gt;
+<b>
+  /* wildcard styling */
+  * {
+  box-sizing: border-box;
+  }
+  
+  /* padding cho toàn bộ body */
+  
+  body {
+  padding: 15px;
+  }
+  
+  /* tạo kiểu cho body */
+  
+  .container {
+  max-width: 1200px;
+  margin: auto;
+  }
+  
+  h1 {
+  color: green;
+  }
+  
+  /* trang trí anchor tag */
+  
+  a {
+  text-decoration: none;
+  color: #5673C8;
+  }
+  
+  a:hover {
+  color: lightblue;
+  }
+  
+  /* trang trí paragraph tag */
+  
+  p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  }
+  
+  /* trang trí hàng và cột */
+  
+  .row {
+  margin: 0px -18px;
+  padding: 8px;
+  }
+  
+  .row&gt;.column {
+  padding: 6px;
+  }
+  
+  .column {
+  float: left;
+  width: 25%;
+  }
+  
+  .row:after {
+  content: &quot;&quot;;
+  display: table;
+  clear: both;
+  }
+  
+  /* trang trí nội dung */
+  
+  .content {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid gray;}
+  
+  /* set window size chiều ngang 850 */
+  
+  @media screen and (max-width: 850px) {
+  .column {
+  width: 50%;
+  }
+  }
+  
+  /* set window size chiều ngang 400 */
+  
+  @media screen and (max-width: 400px) {
+  .column {
+  width: 100%;
+  }
+  }
+</b>
+
+&lt;/style&gt;
+
+&lt;/head&gt;  
+</code>
+</pre>
+<p>Sau khi đã hoàn thành dựng khung của trang web, bạn bắt đầu tiến hành lập trình cho phần nội dung. Đây là phần để bạn trình bày những dự án đã thực hiện.</p>
+<pre>
+<code class="language-html">
+&lt;body&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+&lt;h1&gt;ITviec Blog&lt;/h1&gt;
+&lt;h3&gt;Ý tưởng phát triển sự nghiệp IT của bạn&lt;/h3&gt;
+&lt;hr&gt;
+
+&lt;h2&gt;Portfolio&lt;/h2&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;column&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=
+&quot;http://itviec.uptech.vn/wp-content/uploads/2024/03/html-la-gi-blog-thumbnail-vippro.jpg&quot;
+alt=&quot;&quot; style=&quot;width:100%&quot;&gt;
+&lt;h3&gt;
+&lt;a href=&quot;#&quot;&gt;Giải đáp A - Z điều cần biết về HTML&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;HTML (Hypertext Markup Language) hay còn được gọi là ngôn ngữ đánh dấu siêu văn bản được thiết kế để tạo nên các trang web trên World Wide Web (www).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;column&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=
+&quot;http://itviec.uptech.vn/wp-content/uploads/2024/03/table-html-blog-thumbnail-vippro.jpg&quot;
+alt=&quot;&quot; style=&quot;width:100%&quot;&gt;
+&lt;h3&gt;
+&lt;a href=&quot;#&quot;&gt;Hướng dẫn cách tạo bảng trong HTML&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Bảng (Table) là phần tử HTML thể hiện dữ liệu được sắp xếp theo hàng và cột tương tự như một bảng tính. Trong HTML, cấu trúc bảng có thể giúp bạn dễ dàng sắp xếp các thành phần từ đơn giản đến phức tạp theo một cách hoàn chỉnh với đầy đủ về tiêu đề hàng, cột, tiêu đề hợp nhất,… &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;column&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;http://itviec.uptech.vn/wp-content/uploads/2024/03/bang-mau-html-blog-thumbnail-vippro.png&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;
+&lt;h3&gt;
+&lt;a href=&quot;#&quot;&gt;Tổng hợp đầy đủ nhất về Bảng màu HTML&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Mã màu HTML là việc biểu diễn các màu sắc thông qua tập hợp số và chữ cái theo một quy tắc. Khi lập trình trang web, bảng mã màu HTML sẽ giúp máy tính diễn giải và hiển thị thông tin theo đúng màu sắc mà bạn đã cài đặt.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;column&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=
+&quot;http://itviec.uptech.vn/wp-content/uploads/2024/03/cac-the-trong-html-blog-thumbnail-vippro.png&quot;
+alt=&quot;&quot; style=&quot;width:100%&quot;&gt;
+&lt;h3&gt; 
+     &lt;a href=&quot;#&quot;&gt;Tổng hợp 70+ thẻ trong HTML thông dụng&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Thẻ HTML (HTML tags) là những từ khóa được sử dụng để định dạng cấu trúc khác nhau trên trang web. Cú pháp của một thẻ HTML đều có hai phần được gọi là thẻ mở và thẻ đóng, được đặt trong dấu ngoặc nhọn và có thêm dấu gạch chéo (/) ở nội dung thẻ đóng.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<p>Cuối cùng là phần chân trang cho trang web với những thông tin liên hệ hoặc bản quyền web,…</p>
+<pre>
+<code class="language-html">
+&lt;footer&gt;NGÔ ĐÌNH QUỐC || qngo09042009 
+ || lớp 11/1&lt;/footer&gt;
+
+&lt;/body&gt;
+
+
+&lt;/html&gt;
+
+</code>
+
+</pre>
+<pre><a href="/html/bai1nangcao.html"><h2>Bài 1 nâng cao ở đây</h2></a></pre>
+<br>
+<h2 style="color:red;">Tổng kết</h2>
+<p>Học HTML là một quá trình của sự kiên trì và luyện tập thường xuyên. Việc thực hành các bài tập HTML sẽ là một cách hiệu quả để bạn củng cố kiến thức và kỹ năng đã học. Bài viết đã cung cấp những nguồn tài liệu bài tập HTML phong phú và đa dạng, phù hợp với mọi trình độ khác nhau.
+<br>
+<br>
+<b>Hy vọng những thông tin trong bài viết sẽ giúp ích cho các lập trình viên trong quá trình trở thành một Front-End Developer chuyên nghiệp.</b></p>
+
+  <hr>
+  <pre>                                          <b>  ĐÓ LÀ 1 SỐ THẺ HTML</b> <a href="#">lên lại trên</a>
+                                                        
+  </pre> 
+      <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+  </body>
+</html>
