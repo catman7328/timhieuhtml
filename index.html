@@ -7,6 +7,7 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css">
   </head>
   <body>
+    
   
     <h1 style="color:red;">Tổng hợp 12+ bài tập HTML & CSS cơ bản cho người mới bắt đầu</h1>
   
@@ -278,8 +279,7 @@ th, td {
 
 Đầu tiên, bạn tiến hành định dạng cho trang web bằng cách sử dụng các thuộc tính CSS. </p>
 <pre>
-<code class="language-html">
-&lt;!DOCTYPE html&gt;
+<code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
 &lt;head&gt;
@@ -385,7 +385,6 @@ th, td {
 <pre>
 <code class="language-html">
 &lt;body&gt;
-
 &lt;div class=&quot;container&quot;&gt;
 &lt;h1&gt;ITviec Blog&lt;/h1&gt;
 &lt;h3&gt;Ý tưởng phát triển sự nghiệp IT của bạn&lt;/h3&gt;
@@ -447,16 +446,189 @@ alt=&quot;&quot; style=&quot;width:100%&quot;&gt;
 <code class="language-html">
 &lt;footer&gt;NGÔ ĐÌNH QUỐC || qngo09042009 
  || lớp 11/1&lt;/footer&gt;
-
 &lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+<pre><a  href="./html/bai1nangcao.html">  <h2>Bài 1 nâng cao ở đây</h2></a></pre>
+<br>
+<p><b>Bài tập 2: </b>Thực hành tạo một trang web cơ bản với form khảo sát về ITviec Blog theo mẫu sau: </p>
+<pre><img src="https://itviec.com/blog/wp-content/uploads/2024/05/bai-tap-html-10-vippro.jpg" alt="bài 2"></pre>
+<br>
+<p><b>Trả lời Bài tập 2:</b></p>
+<pre>
+  <code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;vn&quot;&gt;
+ &lt;head&gt;
+   &lt;meta charset=&quot;UTF-8&quot;&gt;
+   &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+   &lt;title&gt;Thiết lập biểu mẫu bằng HTML &amp; CSS&lt;/title&gt;
 
+   &lt;style&gt;
+      body {
+ background-color: #05c46b;
+ font-family: Verdana;
+ text-align: center;
+ }
+
+ form {
+ background-color: #fff;
+ max-width: 500px;
+ margin: 50px auto;
+ padding: 30px 20px;
+ box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+ }
+
+ .form-control {
+  text-align: left;
+  margin-bottom: 25px;
+  }
+
+  .form-control label {
+   display: block;
+   margin-bottom: 10px;
+  }
+
+  .form-control input,
+
+  .form-control select,
+
+  .form-control textarea {
+   border: 1px solid #777;
+   border-radius: 2px;
+   font-family: inherit;
+   padding: 10px;
+   display: block;
+   width: 95%;
+  }
+
+   .form-control input[type=&quot;radio&quot;],
+
+   .form-control input[type=&quot;checkbox&quot;] {
+   display: inline-block;
+   width: auto;
+  }
+
+   button {
+   background-color: #05c46b;
+   border: 1px solid #777;
+   border-radius: 2px;
+   font-family: inherit;
+   font-size: 21px;
+   display: block;
+   width: 100%;
+   margin-top: 50px;
+   margin-bottom: 20px;
+  }
+
+&lt;/style&gt;
+
+  &lt;/head&gt;
+
+  &lt;body&gt;
+<h2 style="color:red;">  <b>   &lt;!-- nội dung của trang web --&gt;</b></h2>
+  &lt;/body&gt;
 
 &lt;/html&gt;
-
 </code>
-
 </pre>
-<pre><a href="./html/bai1nangcao.html"><h2>Bài 1 nâng cao ở đây</h2></a></pre>
+<br>
+
+  <p>Tiếp theo, đối với phần body bạn sẽ nhập lần lượt các thông tin thành phần có trong biểu mẫu như trường nhập văn bản, lựa chọn danh sách, chọn hộp kiểm và radio.
+  <br>
+  <br>
+  Cuối cùng là tạo nút Submit cho biểu mẫu cùng định dạng CSS như sau:</p>
+<pre>
+  
+<code class="language-html">&lt;body&gt;
+&lt;h1&gt;Biểu mẫu khảo sát ITviec&lt;/h1&gt;
+&lt;form id=&quot;form&quot;&gt;
+
+&lt;div class=&quot;form-control&quot;&gt;
+   &lt;label for=&quot;name&quot; id=&quot;label-name&quot;&gt;Họ tên&lt;/label&gt;
+   &lt;input type=&quot;text&quot;
+              id=&quot;name&quot;
+              placeholder=&quot;Nhập tên của bạn&quot;/&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-control&quot;&gt;
+    &lt;label for=&quot;email&quot; id=&quot;label-email&quot;&gt;Email&lt;/label&gt;
+    &lt;input type=&quot;email&quot; id=&quot;email&quot; placeholder=&quot;Nhập email của bạn&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-control&quot;&gt;
+    &lt;label for=&quot;age&quot; id=&quot;label-age&quot;&gt;Tuổi&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;age&quot; placeholder=&quot;Nhập tuổi&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-control&quot;&gt;
+  &lt;label for=&quot;role&quot; id=&quot;label-role&quot;&gt;Hiện tại bạn đang là?&lt;/label&gt;
+         &lt;select name=&quot;role&quot; id=&quot;role&quot;&gt;
+      &lt;option value=&quot;student&quot;&gt;Học sinh/Sinh viên&lt;/option&gt;
+      &lt;option value=&quot;intern&quot;&gt;Thực tập&lt;/option&gt;
+      &lt;option value=&quot;professional&quot;&gt;Nhân viên&lt;/option&gt;
+      &lt;option value=&quot;other&quot;&gt;Khác&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-control&quot;&gt;
+    &lt;label&gt;Bạn sẽ giới thiệu ITviec với bạn bè chứ?&lt;/label&gt;
+    &lt;label for=&quot;recommed-1&quot;&gt;
+    &lt;input type=&quot;radio&quot; id=&quot;recommed-1&quot; name=&quot;recommed&quot; value=&quot;yes&quot;&gt;Có&lt;/input&gt;
+    &lt;/label&gt;
+    &lt;label for=&quot;recommed-2&quot;&gt;
+    &lt;input type=&quot;radio&quot; id=&quot;recommed-2&quot; name=&quot;recommed&quot; value=&quot;no&quot;&gt;Không&lt;/input&gt;
+    &lt;/label&gt;
+    &lt;label for=&quot;recommed-3&quot;&gt;
+    &lt;input type=&quot;radio&quot; id=&quot;recommed-3&quot; name=&quot;recommed&quot; value=&quot;maybe&quot;&gt;Có thể&lt;/input&gt;
+    &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-control&quot;&gt;
+     &lt;label&gt;Ngôn ngữ lập trình và Framework bạn đã biết?
+     &lt;small&gt;(Có thể chọn nhiều đáp án)&lt;/small&gt;
+     &lt;/label&gt;
+     &lt;label for=&quot;inp-1&quot;&gt;
+     &lt;input type=&quot;checkbox&quot; name=&quot;inp&quot; value=&quot;c&quot;&gt;C&lt;/input&gt;
+     &lt;/label&gt;
+     &lt;label for=&quot;inp-2&quot;&gt;
+     &lt;input type=&quot;checkbox&quot; name=&quot;inp&quot; value=&quot;c++&quot;&gt;C++&lt;/input&gt;
+     &lt;/label&gt;
+     &lt;label for=&quot;inp-3&quot;&gt;
+     &lt;input type=&quot;checkbox&quot; name=&quot;inp&quot; value=&quot;c#&quot;&gt;C#&lt;/input&gt;&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-control&quot;&gt;
+     &lt;label for=&quot;comment&quot;&gt;Bạn có câu hỏi gì cho ITviec không?&lt;/label&gt;
+     &lt;textarea name=&quot;comment&quot; id=&quot;comment&quot;placeholder=&quot;Enter your comment here&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+
+&lt;button type=&quot;submit&quot; value=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+
+&lt;/form&gt;
+
+&lt;/body&gt;    
+  
+</code>
+  
+</pre>
+<a href="./html/bai2nangcao.html"><h2>Bài 2 nâng cao ở đây</h2></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br>
 <h2 style="color:red;">Tổng kết</h2>
 <p>Học HTML là một quá trình của sự kiên trì và luyện tập thường xuyên. Việc thực hành các bài tập HTML sẽ là một cách hiệu quả để bạn củng cố kiến thức và kỹ năng đã học. Bài viết đã cung cấp những nguồn tài liệu bài tập HTML phong phú và đa dạng, phù hợp với mọi trình độ khác nhau.

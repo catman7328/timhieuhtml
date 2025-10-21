@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thiết lập biểu mẫu bằng HTML & CSS</title>
+
+    <style>
+      body {
+        background-color: #2950de;
+        font-family: Verdana;
+        text-align: center;
+      }
+
+      form {
+        background-color: #fff;
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 30px 20px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .form-control {
+        text-align: left;
+        margin-bottom: 25px;
+      }
+
+      .form-control label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .form-control input,
+      .form-control select,
+      .form-control textarea {
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: inherit;
+        padding: 10px;
+        display: block;
+        width: 95%;
+      }
+
+      .form-control input[type="radio"],
+      .form-control input[type="checkbox"] {
+        display: inline-block;
+        width: auto;
+      }
+
+      button {
+        background-color: #df122a;
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: 21px;
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="../index.html"><h2 style="color:red;">về trang chủ</h2></a>
+    <h1>Biểu mẫu khảo sát ITviec</h1>
+<form id="form">
+
+<div class="form-control">
+   <label for="name" id="label-name">Họ tên</label>
+   <input type="text"
+              id="name"
+              placeholder="Nhập tên của bạn"/>
+</div>
+
+<div class="form-control">
+    <label for="email" id="label-email">Email</label>
+    <input type="email" id="email" placeholder="Nhập email của bạn" />
+</div>
+
+<div class="form-control">
+    <label for="age" id="label-age">Tuổi</label>
+    <input type="text" id="age" placeholder="Nhập tuổi" />
+</div>
+
+<div class="form-control">
+  <label for="role" id="label-role">Hiện tại bạn đang là?</label>
+         <select name="role" id="role">
+      <option value="student">Học sinh/Sinh viên</option>
+      <option value="intern">Thực tập</option>
+      <option value="professional">Nhân viên</option>
+      <option value="other">Khác</option>
+    </select>
+</div>
+
+<div class="form-control">
+    <label>Bạn sẽ giới thiệu ITviec với bạn bè chứ?</label>
+    <label for="recommed-1">
+    <input type="radio" id="recommed-1" name="recommed" value="yes">Có</input>
+    </label>
+    <label for="recommed-2">
+    <input type="radio" id="recommed-2" name="recommed" value="no">Không</input>
+    </label>
+    <label for="recommed-3">
+    <input type="radio" id="recommed-3" name="recommed" value="maybe">Có thể</input>
+    </label>
+</div>
+
+<div class="form-control">
+     <label>Ngôn ngữ lập trình và Framework bạn đã biết?
+     <small>(Có thể chọn nhiều đáp án)</small>
+     </label>
+     <label for="inp-1">
+     <input type="checkbox" name="inp" value="java"><b>JAVA</b></input>
+     </label>
+     <label for="inp-2">
+     <input type="checkbox" name="inp" value="css"><b>CSS</b></input>
+     </label>
+     <label for="inp-3">
+     <input type="checkbox" name="inp" value="html"><b>HTML</b></input></label>
+     <label for="inp-4">
+        <input type="checkbox" name="inp" value="js"><b>JS</b></input>
+     </label>
+</div>
+
+<div class="form-control">
+     <label for="comment">Bạn có câu hỏi gì cho ITviec không?</label>
+     <textarea name="comment" id="comment"placeholder="Enter your comment here"></textarea>
+</div>
+
+<button type="submit" value="submit">Submit</button>
+
+</form>
+   
+  </body>
+</html>
