@@ -1,0 +1,34 @@
+body {
+  background-image: url(./html/prasun-mishra-Je33gGuNrPk-unsplash.jpg);
+  background-repeat: no-repeat; /*  Không lặp ảnh */
+  background-size: cover; /* Ảnh phủ toàn bộ, không bị méo */
+  background-position: center; /*  Căn giữa ảnh */
+}
+#A1 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#anh1 {
+  text-align: center;
+}
+#anh2 {
+  text-align: center;
+}
+#anh3 {
+  text-align: center;
+}
+#anh4 {
+  text-align: center;
+}
+#anh5 {
+  text-align: center;
+}
+#anh6 {
+  text-align: center;
+}
+#anh7 {
+  text-align: center;
+}
+#caiket {
+  text-align: center;
+}
